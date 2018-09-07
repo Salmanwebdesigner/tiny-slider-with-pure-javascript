@@ -1,7 +1,7 @@
-.gallery { position: relative; overflow: hidden; max-width: 100%; width: 100%; }
-.gallery .tinyslide { float: left; }
-.gallery .slides { transition: 1s ease; }
-.gallery .nav {
+.tinyslider { position: relative; overflow: hidden; max-width: 100%; width: 100%; }
+.tinyslider .tinyslide { float: left; }
+.tinyslider .slides { transition: 1s ease; }
+.tinyslider .nav {
     position: absolute;
     top: 45%;
     left: 0;
@@ -11,20 +11,28 @@
     width: 100%;
     font-family: monospace;
     text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.gallery .nav .nav-prev {
+.tinyslider .nav .nav-prev {
     position: absolute;
     left: 15px;
+    display: block;
 }
-.gallery .nav .nav-next {
+.tinyslider .nav .nav-next {
     position: absolute;
     right: 15px;
 }
-.gallery .nav a {
+.tinyslider .nav a {
     background: #fff;
     width: 30px;
     height: 30px;
     padding: 0;
     line-height: 30px;
     border-radius: 50%;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #4d4b4b;
 }
